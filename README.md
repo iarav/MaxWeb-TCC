@@ -1,10 +1,8 @@
 # MaxWeb - TCC
-Este repositório visa desenvolver o sistema web desenvolvido de uma solução tecnológica para a elicitação do conhecimento, que integrará uma API em Python e um chatbot. A solução é voltada para o armazenamento dos dados em mapas conceituais estendidos (MCE), uma abordagem que permite organizar e recuperar as informações de maneira eficiente.<br>
-A elicitação do conhecimento ocorre de forma automatizada por meio de perguntas estruturadas conduzidas pelo chatbot. Este processo permite que o chatbot guie o usuário através de uma série de perguntas, coletando informações relevantes para o sistema de maneira organizada. <br>
-O chatbot foi denominado de `MAX` - `Management and Acquisition eXpert` e foi desenvolvido para o Trabalho de Conclusão de Curso (TCC).
-Aqui está o README melhorado, em português e com algumas correções para padronização:
 
-<br>
+Este repositório contém o sistema web desenvolvido como uma solução tecnológica para a elicitação do conhecimento, que integra uma **API em Python** e um **chatbot**. A solução é voltada para o armazenamento de dados em **mapas conceituais estendidos (MCE)**, permitindo a organização e recuperação eficiente das informações.
+
+A elicitação do conhecimento ocorre de forma automatizada, por meio de perguntas estruturadas conduzidas pelo chatbot. Esse processo permite que o chatbot guie o usuário através de uma série de perguntas, coletando informações relevantes de maneira organizada. O chatbot foi denominado **MAX** - *Management and Acquisition eXpert* e foi desenvolvido para o Trabalho de Conclusão de Curso (TCC).
 
 ### Tecnologias Utilizadas
 
@@ -14,60 +12,109 @@ O sistema web foi desenvolvido com as seguintes tecnologias:
 - **TypeScript**
 
 <br>
+<br>
 
+## Sumário
 
-## Instalação
+1. [Pré-requisitos](#pré-requisitos)
+2. [Instalação e Execução com Docker](#instalação-e-execução-com-docker)
+3. [Instalação e Execução sem Docker](#instalação-e-execução-sem-docker)
+4. [Uso](#uso)
+5. [Parar o Sistema](#parar-o-sistema)
+6. [Limpeza do Ambiente](#limpeza-do-ambiente)
 
-Para instalar o MaxWeb, siga os passos abaixo:
+---
 
-1. Clone este repositório para o seu ambiente local:
+## Pré-requisitos
 
-    HTTP:
-    ```bash
-    git clone https://github.com/iarav/MaxWeb-TCC.git
-    ```
-    OU SSH:
+Para rodar o sistema, você precisará dos seguintes itens instalados no seu ambiente de desenvolvimento:
 
-    ```bash
-    git clone git@github.com:iarav/MaxWeb-TCC.git
-    ```
+1. **Node.js e npm**: [Instale o Node.js](https://nodejs.org) (versão 16 ou superior).
+2. **Ionic CLI**: Instale o Ionic CLI globalmente:
+   ```bash
+   npm install -g @ionic/cli
+   ```
+3. **Docker** (opcional, para rodar via contêineres): [Instale o Docker](https://docs.docker.com/get-docker/).
+4. **Git**: [Instale o Git](https://git-scm.com/downloads) para clonar o repositório.
 
-2. Acesse o diretório do projeto:
+---
+
+## Instalação e Execução com Docker
+
+Para instalar e executar o MaxWeb usando Docker, siga os passos abaixo:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/iarav/MaxWeb-TCC.git
+   ```
+   ou, usando SSH:
+   ```bash
+   git clone git@github.com:iarav/MaxWeb-TCC.git
+   ```
+
+2. **Acesse o diretório do projeto**:
    ```bash
    cd MaxWeb-TCC
    ```
-3. Construa a imagem Docker:
+
+3. **Construa a imagem Docker**:
    ```bash
    docker compose build
    ```
-4. Inicie o sistema:
+
+4. **Inicie o sistema**:
    ```bash
    docker compose up
    ```
 
+<br>
+<br>
+
+## Instalação e Execução sem Docker
+
+Caso prefira rodar o projeto sem Docker, execute o camando abaixo:
+
+   ```bash
+   npm install && ionic serve --host 0.0.0.0 --port 8100 --disableHostCheck
+   ```
+   Este comando instalará todas as bibliotecas necessárias listadas no `package.json` e o servidor deve iniciar em http://localhost:8100, onde você pode acessar o sistema.
+
+<br>
+<br>
+
 ## Uso
 
-Para utilizar o MaxWeb, basta abrir a plataforma de chat integrada ao sistema e iniciar uma conversa com o bot MAX. O usuário pode responder às perguntas estruturadas para colaborar na elicitação de conhecimento ou, conforme a configuração, fazer perguntas e obter assistência em diversas tarefas.
+Para utilizar o sistema, você pode:
+
+1. Como engenheiro do conhecimento, acessar a página inicial e começar uma nova elicitação, seguindo o fluxo instruido na tela e adquirir um código para passa-lo ao agente.
+
+2. Como agente do conhecimento, acessar o chatbot com um código informado pelo engenheiro e conversar com o chatbot através da ingterface desenvolvida.
+
+<br>
+<br>
 
 ## Parar o Sistema
 
-Para interromper a execução da aplicação, utilize o seguinte comando:
+Para interromper a execução da aplicação quando estiver usando Docker, utilize o seguinte comando:
 ```bash
 docker compose down
 ```
+
+<br>
+<br>
 
 ## Limpeza do Ambiente
 
 Para limpar o ambiente após o uso, execute os seguintes comandos:
 
-1. Remova os recursos não utilizados do Docker:
+1. **Remova os recursos não utilizados do Docker**:
    ```bash
    docker system prune -f
    docker volume prune -f
    ```
-2. Remova o diretório `node_modules` (caso seja necessário, delete manualmente ou execute):
+
+2. **Remova o diretório `node_modules`** (caso seja necessário, delete manualmente ou execute):
    ```bash
    sudo rm -rf node_modules
    ```
 
----
