@@ -58,9 +58,17 @@ Para instalar e executar o MaxWeb usando Docker, siga os passos abaixo:
    ```
 
 3. **Construa a imagem Docker**:
-   ```bash
-   docker compose build
-   ```
+   - **No Windows**:
+     - Acesse o docker desktop para iniciar o docker.
+     - Depois execute:
+      ```bash
+      docker compose build
+      ```
+
+   - **No Unix/macOS**:
+      ```bash
+      docker compose build
+      ```
 
 4. **Inicie o sistema**:
    ```bash
