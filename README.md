@@ -12,7 +12,6 @@ O sistema web foi desenvolvido com as seguintes tecnologias:
 - **TypeScript**
 
 <br>
-<br>
 
 ---
 ## Sumário
@@ -69,7 +68,6 @@ Para instalar e executar o MaxWeb usando Docker, siga os passos abaixo:
    ```
 
 <br>
-<br>
 
 ---
 
@@ -83,7 +81,6 @@ Caso prefira rodar o projeto sem Docker, execute o camando abaixo:
    Este comando instalará todas as bibliotecas necessárias listadas no `package.json` e o servidor deve iniciar em http://localhost:8100, onde você pode acessar o sistema.
 
 <br>
-<br>
 
 ---
 
@@ -96,7 +93,6 @@ Para utilizar o sistema, você pode:
 2. Como agente do conhecimento, acessar o chatbot com um código informado pelo engenheiro e conversar com o chatbot através da ingterface desenvolvida.
 
 <br>
-<br>
 
 ---
 
@@ -107,7 +103,6 @@ Para interromper a execução da aplicação quando estiver usando Docker, utili
 docker compose down
 ```
 
-<br>
 <br>
 
 ---
