@@ -14,6 +14,7 @@ O sistema web foi desenvolvido com as seguintes tecnologias:
 <br>
 <br>
 
+---
 ## Sumário
 
 1. [Pré-requisitos](#pré-requisitos)
@@ -70,6 +71,8 @@ Para instalar e executar o MaxWeb usando Docker, siga os passos abaixo:
 <br>
 <br>
 
+---
+
 ## Instalação e Execução sem Docker
 
 Caso prefira rodar o projeto sem Docker, execute o camando abaixo:
@@ -82,6 +85,8 @@ Caso prefira rodar o projeto sem Docker, execute o camando abaixo:
 <br>
 <br>
 
+---
+
 ## Uso
 
 Para utilizar o sistema, você pode:
@@ -93,6 +98,8 @@ Para utilizar o sistema, você pode:
 <br>
 <br>
 
+---
+
 ## Parar o Sistema
 
 Para interromper a execução da aplicação quando estiver usando Docker, utilize o seguinte comando:
@@ -102,6 +109,8 @@ docker compose down
 
 <br>
 <br>
+
+---
 
 ## Limpeza do Ambiente
 
