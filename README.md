@@ -71,5 +71,3 @@ Para limpar o ambiente após o uso, execute os seguintes comandos:
    ```
 
 ---
-
-Esse README padronizado oferece uma visão clara e orientada para a instalação, uso e manutenção do sistema MaxWeb.
