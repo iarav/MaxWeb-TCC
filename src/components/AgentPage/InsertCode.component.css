@@ -1,0 +1,43 @@
+.insertCodeContainer {
+  background-color: var(--ion-color-dark);
+  padding: 5%;
+  color: var(--ion-color-tertiary-tint);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  max-height: 100vh;
+}
+
+.insertCodeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.insertCode {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  padding-top: 0.5%;
+  text-align: left;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.insertCodeTitle {
+  font-family: "Sansation", sans-serif;
+  text-transform: uppercase;
+  color: var(--ion-color-white);
+  text-align: center;
+  font-weight: 900;
+}
+
+.insertCodeText {
+  font-size: 3rem;
+}

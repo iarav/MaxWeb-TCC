@@ -1,0 +1,78 @@
+.codigoModalContainer {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.codigoContainer {
+  text-align: center;
+  background-color: #393939;
+  border-radius: 10px;
+  width: 100%;
+  height: 25vh;
+}
+
+.numeroCodigo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.codigoTitle {
+  text-transform: uppercase;
+  font-family: "Sansation", sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.codigoDescription {
+  font-family: "Sansation", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.codigoSpan {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Sansation", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.codigo {
+  text-transform: uppercase;
+  color: var(--ion-color-primary);
+  font-family: "Sansation", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.codigoSpan,
+.codigo {
+  margin-right: 2vw;
+}
+
+.linkAcesso {
+  text-transform: uppercase;
+  font-family: "Sansation", sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.linkAcesso a {
+  color: var(--ion-color-white);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+link {
+  text-decoration: underline;
+}

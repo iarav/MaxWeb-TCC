@@ -1,0 +1,15 @@
+.maxButton {
+  text-transform: uppercase;
+  height: 7vh;
+  width: 25%;
+  background-color: transparent;
+  border-color: var(--ion-color-tertiary-contrast);
+  border-radius: 50vw;
+  text-align: center;
+  color: var(--ion-color-dark);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  margin-bottom: 50px;
+  font-weight: 700;
+  z-index: 2;
+}

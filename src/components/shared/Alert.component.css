@@ -1,0 +1,38 @@
+.alert {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vw;
+  width: 100%;
+  padding-top: 8vh;
+}
+
+.alert-warning {
+  color: white;
+}
+
+.alert-error {
+  color: white;
+  font-weight: 900;
+}
+
+.cancelButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+.alertContainer {
+  background-color: var(--ion-color-dark);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  position: relative;
+  width: 90%;
+  max-width: 40rem;
+  height: 40%;
+}

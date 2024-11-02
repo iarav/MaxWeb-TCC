@@ -1,0 +1,26 @@
+.maxInput {
+  text-transform: uppercase;
+  height: 7vh;
+  width: 90%;
+  background-color: transparent;
+  border-color: var(--ion-color-tertiary-contrast);
+  border-radius: 50vw;
+  text-align: center;
+  color: var(--ion-color-tertiary-contrast);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  margin-bottom: 3%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--ion-color-tertiary-contrast);
+  align-self: center;
+}
+
+.maxInput::placeholder {
+  color: var(--ion-color-tertiary-contrast);
+  opacity: 1;
+}
+
+.maxInput:focus::placeholder {
+  color: var(--ion-color-tertiary);
+}

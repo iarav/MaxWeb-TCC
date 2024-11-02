@@ -1,0 +1,23 @@
+.modalScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 31, 30, 0.75);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background-color: var(--ion-color-dark);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  position: relative;
+  width: 50vw;
+  height: fit-content;
+}

@@ -1,0 +1,130 @@
+.chatContainer {
+  background-color: var(--ion-color-dark);
+  height: 100%;
+}
+
+.chatHeader {
+  background-color: var(--ion-color-secondary-shade);
+  cursor: pointer;
+}
+
+.chatInputContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.chatInput {
+  background-color: var(--ion-color-tertiary-tint);
+  border-radius: 5px;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatInputDisabled {
+  background-color: var(--ion-color-tertiary-disabled);
+  border-radius: 5px;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatInputField {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  padding-left: 3vw;
+  color: var(--ion-color-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chatInputField:focus {
+  outline: none;
+  border-color: var(--ion-color-primary);
+  box-shadow: 0 0 5px var(--ion-color-primary);
+}
+
+.submitButton {
+  cursor: pointer;
+  color: var(--ion-color-dark);
+}
+
+.chat {
+  background-color: var(--ion-color-dark);
+  height: 75vh;
+  overflow-y: scroll;
+}
+.chatMessageContent {
+  background-color: #e2e2e2;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-transform: inherit;
+  border-radius: 1vh;
+  padding: 2vw;
+  font-size: 16px;
+  max-width: 60%;
+  max-width: 40%;
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chatMessage-chatbot {
+  margin-right: auto;
+  position: relative;
+}
+
+.chatMessage-chatbot::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 30px solid #e2e2e2;
+  left: -30px;
+  top: 40%;
+}
+
+.chatMessage-agent {
+  margin-left: auto;
+  position: relative;
+}
+
+.chatMessage-agent::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 30px solid #e2e2e2;
+  right: -30px;
+  top: 40%;
+}
+
+.chatMessage {
+  display: flex;
+  margin: 2vh 0;
+}
+
+.profileIconLeft-chatbot {
+  margin-right: 3vw;
+  align-self: center;
+}
+
+.profileIconLeft-agent {
+  display: none;
+}
+.profileIconRight-chatbot {
+  display: none;
+}
+
+.profileIconRight-agent {
+  left: 0;
+  margin-left: 3vw;
+  align-self: center;
+}

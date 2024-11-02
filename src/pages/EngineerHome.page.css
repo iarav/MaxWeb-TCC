@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.gotoAgentePage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-inline-end: 2vw;
+  margin-top: 1vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.gotoAgentePage > a {
+  color: white;
+}

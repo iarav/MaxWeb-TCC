@@ -1,0 +1,79 @@
+.titleConfirmModal {
+  color: white;
+  font-family: "Sansation", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.focalQuestionInformed {
+  background-color: #393939;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh;
+  padding-top: 4vh;
+  max-height: 10vh;
+  overflow: auto;
+}
+
+.informedFocalQuestionTitle,
+.informedFocalQuestion {
+  color: white;
+  font-family: "Sansation", sans-serif;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  text-transform: capitalize;
+}
+
+.informedFocalQuestionTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.informedFocalQuestion {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.extractedInfos {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoInput {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoInput > span {
+  width: 25%;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: var(--ion-color-white);
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.input {
+  width: 100%;
+}
+
+.customInputClass {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
